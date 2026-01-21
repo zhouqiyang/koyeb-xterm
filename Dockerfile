@@ -3,6 +3,7 @@ FROM jlesage/baseimage-gui:alpine-3.19-v4
 
 # Install xterm.
 RUN add-pkg xterm
+RUN apk add sudo
 
 # Copy the start script.
 COPY startapp.sh /startapp.sh
